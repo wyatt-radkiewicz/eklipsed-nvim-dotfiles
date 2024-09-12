@@ -6,4 +6,21 @@ lsp_zero.on_attach(function(client, bufnr)
   lsp_zero.default_keymaps({buffer = bufnr})
 end)
 
-require'lspconfig'.clangd.setup{}
+local lspconfig = require('lspconfig') 
+lspconfig.clangd.setup{}
+lspconfig.lua_ls.setup{}
+lspconfig.rust_analyzer.setup {
+  -- Server-specific settings. See `:help lspconfig-setup`
+  settings = {
+    ['rust-analyzer'] = {},
+  },
+}
+lspconfig.pyright.setup{
+  settings = {
+    python = {
+		pythonPath = "/opt/homebrew/bin/python3",
+    },
+  },
+}
+
+lspconfig.glsl_analyzer.setup{}
