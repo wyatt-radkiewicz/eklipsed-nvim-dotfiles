@@ -25,6 +25,9 @@ filetype plugin on
 " Enable syntax highlighting
 syntax on
 
+" Automatic indenting
+set cindent
+
 " Function to set tab size
 function! TabStyle(size, expand, global)
 	let l:dolocal = a:global ? '' : 'local'
