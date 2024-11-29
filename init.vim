@@ -1,3 +1,7 @@
+" Disable netrw!
+let g:loaded_netrw = 1
+let g:loaded_netrwPlugin = 1
+
 " Setup vimplug
 source $HOME/.config/nvim/plugins.vim
 

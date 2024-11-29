@@ -4,10 +4,10 @@
 let mapleader=" "
 
 " Open file viewer
-nnoremap <leader>pv	<Cmd>Ex<CR>
+nnoremap <leader>pv	<Cmd>NvimTreeToggle<CR>
 
 " Format current buffer
-nnoremap <leader>f	<Cmd>Format<CR>
+nnoremap <leader>f	<Cmd>Neoformat<CR>
 
 " Goto next and previous tabs/buffers
 nnoremap <silent> <A-,>	<Cmd>BufferPrevious<CR>
