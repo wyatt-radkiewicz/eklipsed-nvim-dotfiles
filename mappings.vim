@@ -4,7 +4,7 @@
 let mapleader=" "
 
 " Open file viewer
-nnoremap <leader>pv	<Cmd>NvimTreeToggle<CR>
+nnoremap <leader>pv	<Cmd>NvimTreeFocus<CR>
 
 " Format current buffer
 nnoremap <leader>f	<Cmd>Neoformat<CR>

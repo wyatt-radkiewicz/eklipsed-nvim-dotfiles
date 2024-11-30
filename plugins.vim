@@ -7,6 +7,14 @@ Plug 'williamboman/mason-lspconfig.nvim'	| " Lsp support dependencies
 Plug 'neovim/nvim-lspconfig'
 Plug 'mfussenegger/nvim-lint'			| " Linter dependencies
 
+" Snippets and completion
+Plug 'hrsh7th/cmp-nvim-lsp'
+Plug 'hrsh7th/cmp-buffer'
+Plug 'hrsh7th/cmp-path'
+Plug 'hrsh7th/cmp-cmdline'
+Plug 'hrsh7th/cmp-nvim-lsp-signature-help'
+Plug 'hrsh7th/nvim-cmp'
+
 " Formatter for files
 Plug 'sbdchd/neoformat'
 
@@ -22,9 +30,6 @@ Plug 'romgrk/barbar.nvim'
 
 " Better file tree
 Plug 'nvim-tree/nvim-tree.lua'
-
-" Detect tab width
-Plug 'tpope/vim-sleuth'
 
 call plug#end()
 
