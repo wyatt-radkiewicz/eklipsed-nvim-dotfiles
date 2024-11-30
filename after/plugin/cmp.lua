@@ -25,7 +25,7 @@ cmp.setup({
 
     ['<Tab>'] = function(fallback)
       if not cmp.select_next_item() then
-        if vim.bo.buftype ~= 'prompt' and has_words_before() then
+        if vim.bo.buftype ~= 'prompt' and has_words_before ~= nil and has_words_before() then
           cmp.complete()
         else
           fallback()
@@ -35,7 +35,7 @@ cmp.setup({
 
     ['<S-Tab>'] = function(fallback)
       if not cmp.select_prev_item() then
-        if vim.bo.buftype ~= 'prompt' and has_words_before() then
+        if vim.bo.buftype ~= 'prompt' and has_words_before ~= nil and has_words_before() then
           cmp.complete()
         else
           fallback()
