@@ -23,5 +23,8 @@ Plug 'romgrk/barbar.nvim'
 " Better file tree
 Plug 'nvim-tree/nvim-tree.lua'
 
+" Detect tab width
+Plug 'tpope/vim-sleuth'
+
 call plug#end()
 

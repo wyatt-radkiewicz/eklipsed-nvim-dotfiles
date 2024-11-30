@@ -1,16 +1,29 @@
-" Misc options
-set nosmartindent
-set wrap
+" Undo directory/undo saving
 set noswapfile
 set nobackup
 set undodir=$HOME/.vim/undodir
+
+" Don't highlight searches and incrementally do search as you type
 set nohlsearch
 set incsearch
-set nu
-set relativenumber
+
+" Wrap text
+set wrap
 set colorcolumn=80
-set updatetime=50
+
+" Always center cursor somewhat
 set scrolloff=8
+
+" Set realive line number and set line padding
+set nu
+set nuw=4
+set relativenumber
+
+" Make it so that the view doesn't change when an inlay hint is present
+set signcolumn=yes
+
+" Misc settings
+set updatetime=50
 set guicursor=" "
 set mouse=a
 
@@ -25,9 +38,6 @@ filetype plugin on
 " Enable syntax highlighting
 syntax on
 
-" Automatic indenting
-set cindent
-
 " Function to set tab size
 function! TabStyle(size, expand, global)
 	let l:dolocal = a:global ? '' : 'local'
@@ -36,7 +46,8 @@ function! TabStyle(size, expand, global)
 	exe 'set'..l:dolocal..' tabstop='..a:size
 endfunction
 
-" Set default tab size
+" Set default tab size and set cindent
+set cindent
 call TabStyle(8,v:false,v:true)
 
 " Colorscheme
