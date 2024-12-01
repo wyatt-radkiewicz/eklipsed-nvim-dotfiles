@@ -8,6 +8,9 @@ lsp.clangd.setup{
 lsp.pyright.setup{
   capabilities = capabilities
 }
+lsp.glsl_analyzer.setup{
+  capabilities = capabilities
+}
 
 -- Make it so that we dont get huge log files
 vim.lsp.set_log_level(vim.lsp.log_levels.ERROR)

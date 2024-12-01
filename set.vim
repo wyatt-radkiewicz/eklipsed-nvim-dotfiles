@@ -8,8 +8,8 @@ set nohlsearch
 set incsearch
 
 " Wrap text
-set wrap
-set colorcolumn=80
+set nowrap
+set colorcolumn=80,100
 
 " Always center cursor somewhat
 set scrolloff=8
@@ -52,7 +52,4 @@ call TabStyle(8,v:false,v:true)
 
 " Colorscheme
 colorscheme github_dark_default
-
-" Set header files to be c files by default!
-autocmd BufRead,BufNewFile *.h,*.c set filetype=c.doxygen
 

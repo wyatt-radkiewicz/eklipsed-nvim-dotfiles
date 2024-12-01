@@ -16,6 +16,9 @@ cmp.setup({
 
   -- Additional mappings
   mapping = cmp.mapping.preset.insert({
+    ['<A-p>'] = cmp.mapping.scroll_docs(-4),
+    ['<A-n>'] = cmp.mapping.scroll_docs(4),
+
     ['<S-BS>'] = cmp.mapping.abort(),
 
     ['<S-CR>'] = cmp.mapping.confirm {

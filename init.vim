@@ -11,3 +11,6 @@ source $HOME/.config/nvim/set.vim
 " Key mappings
 source $HOME/.config/nvim/mappings.vim
 
+" Filetypes
+source $HOME/.config/nvim/filetypes.vim
+

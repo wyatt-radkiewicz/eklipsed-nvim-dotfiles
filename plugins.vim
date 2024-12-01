@@ -7,6 +7,9 @@ Plug 'williamboman/mason-lspconfig.nvim'	| " Lsp support dependencies
 Plug 'neovim/nvim-lspconfig'
 Plug 'mfussenegger/nvim-lint'			| " Linter dependencies
 
+" Better syntax highlighting (seperate from lsp)
+Plug 'nvim-treesitter/nvim-treesitter'
+
 " Snippets and completion
 Plug 'hrsh7th/cmp-nvim-lsp'
 Plug 'hrsh7th/cmp-buffer'

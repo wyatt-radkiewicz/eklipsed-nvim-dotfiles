@@ -8,6 +8,14 @@ local screen_width = vim.opt.columns:get()
 local screen_height = vim.opt.lines:get() - vim.opt.cmdheight:get()
 
 require("nvim-tree").setup {
+  prefer_startup_root = true,
+  -- Focus on currently open buffer
+  update_focused_file = {
+    enable = true,
+    update_root = {
+      enable = true,
+    },
+  },
   view = {
     float = {
       -- Make the window float above the others
