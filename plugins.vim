@@ -34,5 +34,8 @@ Plug 'romgrk/barbar.nvim'
 " Better file tree
 Plug 'nvim-tree/nvim-tree.lua'
 
+" Markdown preview
+Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && npx --yes yarn install' }
+
 call plug#end()
 
