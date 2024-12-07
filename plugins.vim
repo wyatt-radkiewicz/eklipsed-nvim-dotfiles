@@ -37,5 +37,9 @@ Plug 'nvim-tree/nvim-tree.lua'
 " Markdown preview
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && npx --yes yarn install' }
 
+" Smear cursor and smooth scrolling!!!!!
+Plug 'sphamba/smear-cursor.nvim'
+Plug 'joeytwiddle/sexy_scroller.vim'
+
 call plug#end()
 
